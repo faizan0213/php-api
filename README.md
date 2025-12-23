@@ -113,37 +113,4 @@ php-api/
 
 - **Using Browser**: Open `http://localhost:8080/api/users.php` (Docker)
    or `http://localhost:8000/api/users.php` (local).
-   
-- **Using cURL**:
-  ```bash
-  curl http://localhost:8080/api/users.php
-  ```
-- **Using Postman**: Send a GET request to the endpoint URL.
 
-**Expected Response**: A JSON object with `status: true` and an array of user data.
-
-### Troubleshooting
-
-- **Port Conflicts**: If port 8080 or 8000 is in use, change the port mapping (e.g., `-p 8081:80` for Docker).
-- **Docker Issues**: Ensure Docker is running and you have sufficient permissions.
-- **PHP Errors**: Check PHP version with `php --version` and ensure it's 8.2+.
-- **CORS Issues**: If accessing from a frontend, ensure the request includes proper headers (though CORS is enabled).
-
-## CORS Configuration
-
-The API has CORS enabled for all origins. You can access it from any frontend application.
-
-## Docker Container Details
-
-- **Base Image**: `php:8.2-apache`
-- **Port**: 80 (mapped to 8080 in examples)
-- **Working Directory**: `/var/www/html/`
-
-## Requirements
-
-- Docker 20.10+ (for containerized deployment)
-- OR PHP 8.2+ (for local development)
-
-## License
-
-This project is provided as-is for educational and development purposes.
