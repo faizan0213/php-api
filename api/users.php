@@ -17,6 +17,16 @@ $users = [
         "id" => 3,
         "name" => "Vikram Singh",
         "email" => "vikram@example.com"
+    ],
+    [
+        "id" => 4,
+        "name" => "Varun Sharma",
+        "email" => "varun@example.com",
+    ],
+    [
+        "id" => 5,
+        "name" => "Amitabh Gupta",
+        "email" => "amitabh@example.com",
     ]
 ];
 
